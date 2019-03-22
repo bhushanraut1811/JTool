@@ -1,0 +1,84 @@
+/*
+package com.jtool.utils;
+
+import com.sun.rowset.internal.Row;
+import org.apache.commons.lang.StringUtils;
+import org.apache.poi.hssf.usermodel.HSSFCellStyle;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellStyle;
+import org.apache.poi.ss.usermodel.IndexedColors;
+import org.apache.poi.ss.usermodel.Sheet;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+*/
+/**
+ * Created by bhushan.raut on 9/22/2016.
+ *//*
+
+public class ReportWriter {
+
+    private static Row createHeaders(LinkedHashMap<String, String> headerMap, Sheet sheet) {
+        CellStyle style = sheet.getWorkbook().createCellStyle();
+        style.setFillForegroundColor(IndexedColors.YELLOW.getIndex());
+        style.setFillPattern(CellStyle.SOLID_FOREGROUND);
+        style.setBorderBottom(HSSFCellStyle.BORDER_THIN);
+        style.setBorderTop(HSSFCellStyle.BORDER_THIN);
+        style.setBorderRight(HSSFCellStyle.BORDER_THIN);
+        style.setBorderLeft(HSSFCellStyle.BORDER_THIN);
+
+        org.apache.poi.ss.usermodel.Row header = sheet.createRow(0);
+        int columnIndex = 0;
+        for (Map.Entry<String, String> entry : headerMap.entrySet()) {
+            String headerText = StringUtils.defaultString(entry.getValue());
+            Cell cell = createCell(header, columnIndex);
+            cell.setCellValue(headerText);
+            cell.setCellStyle(style);
+            sheet.autoSizeColumn(columnIndex);
+            columnIndex++;
+        }
+
+        return header;
+    }
+
+    private static Cell createCell(org.apache.poi.ss.usermodel.Row row, int columnIndex) {
+        Cell cell = row.createCell(columnIndex);
+        return cell;
+    }
+}
+*/
+//==========================================DUMP========================================//
+/*
+private static File[] getFileList(String dirPath) {
+
+        File dir = new File(dirPath);
+
+        File[] fileList = dir.listFiles(new FilenameFilter() {
+
+public boolean accept(File dir, String name) {
+        int indexOfDot = name.indexOf(".");
+        String trimName = name.substring(0, indexOfDot - 1);
+        return trimName.equals(".xls");
+        }
+        });
+        return fileList;
+        }
+
+*/
+
+  /* String fName = "";
+        String extension = "";
+        String name = "";
+
+        int idxOfDot = fileName.lastIndexOf('.');   //Get the last index of . to separate extension
+        extension = fileName.substring(idxOfDot + 1);
+        name = fileName.substring(0, idxOfDot);
+
+        Path path = Paths.get(excelFilePath, fileName);
+        int counter = 1;
+        while (Files.exists(path)) {
+            fileName = name + "(" + counter + ")." + extension;
+            path = Paths.get(fileName);
+            counter++;
+        }*/
