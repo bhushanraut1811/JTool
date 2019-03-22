@@ -6,7 +6,7 @@ package com.jtool.utils;
 public class Constants {
 
     //dummy data
-    public static final String[] JENKINS_BUILD_URL = {"http://172.18.8.108:8080/job/Intellis_StandAlone_NAG1_DHP_26630/1370//cucumber-html-reports/feature-overview.html"
+    public static final String[] JENKINS_BUILD_URL = {"http://1.0.0.1:8080/job/jobName/1370//cucumber-html-reports/feature-overview.html"
     };
 
     public static final String FILE_PATH = "D:\\JTool\\";
